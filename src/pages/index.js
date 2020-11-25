@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/Layout';
-import Footer from '../components/Footer';
-import SocialLinks from '../components/SocialLinks';
-import Header from '../components/Header';
-import aboutImage from '../assets/images/about.jpg';
-import testimonial1 from '../assets/images/testimonial1.jpg';
-import testimonial2 from '../assets/images/testimonial2.jpg';
+import Layout from "../components/Layout";
+import Footer from "../components/Footer";
+import SocialLinks from "../components/SocialLinks";
+import Header from "../components/Header";
+import aboutImage from "../assets/images/about.jpg";
+import testimonial1 from "../assets/images/testimonial1.jpg";
+import testimonial2 from "../assets/images/testimonial2.jpg";
 
 const IndexPage = () => (
   <Layout>
@@ -22,12 +22,12 @@ const IndexPage = () => (
             <p className="text-white-50">
               Tänk dig att du vaknar varje dag med energi att göra det du vill.
               Det tar inte en timme att komma igång på morgonen för att du har
-              smärtor. Du orkar gå i trapporna, hänga med barnen, deras tempo är
-              inte längre en utmaning. Känna säkerheten att gå till gymmet och
-              improvisera, våga testa nya övningar och inte få ont, känslan att
-              känna sig stark, sätta nya person rekord! Tänk om majoriteten av
-              Sveriges befolkning hade varit fysiskt aktiva och inte
-              överviktiga! Det är min vision, mitt Sverige!
+              smärtor. Du orkar gå i trapporna, hänga med barnen, och deras
+              tempo är inte längre en utmaning. Du kan känna säkerheten att gå
+              till gymmet och improvisera, våga testa nya övningar och inte få
+              ont, känslan av att känna sig stark och sätta nya personrekord!
+              Tänk om majoriteten av Sveriges befolkning hade varit fysiskt
+              aktiva och inte överviktiga! Det är min vision, mitt Sverige!
             </p>
           </div>
         </div>
@@ -47,25 +47,40 @@ const IndexPage = () => (
     <section id="about" className="projects-section bg-light">
       <div className="container">
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div className="col-xl-8 col-lg-7">
+          <div className="col-xl-5 col-lg-4">
             <img className="img-fluid mb-3 mb-lg-0" src={aboutImage} alt="" />
           </div>
-          <div className="col-xl-4 col-lg-5">
+          <div className="col-xl-7 col-lg-8">
             <div className="featured-text text-center text-lg-left">
               <h2>Om mig</h2>
-              <p className="text-black-50 mb-0">
-                Bacon ipsum dolor amet ham doner shank porchetta, landjaeger
-                chuck short ribs beef ribs sirloin. Andouille doner tail shank
-                ball tip cupim boudin chislic filet mignon alcatra tenderloin.
-                Bacon bresaola meatloaf corned beef pig boudin frankfurter.
-                Brisket leberkas jerky cow boudin kielbasa tail beef ribs
-                shankle sausage shoulder pork belly burgdoggen strip steak
-                tongue. Rump brisket strip steak fatback jerky, shankle
-                hamburger sirloin ground round shank ham hock drumstick.
-                Kielbasa alcatra landjaeger pork belly tenderloin venison
-                biltong ground round meatball. Pork belly biltong pastrami
-                alcatra kielbasa kevin meatloaf shankle jerky spare ribs pork
-                loin tenderloin ham.
+              <p className="text-black-50 mb-3">
+                Med glimten i ögat och ett driv för resultat så ser jag till att
+                din träning går framåt men också är rolig på samma gång. Med
+                över 10 000h+ på golvet med kunder så har jag fått chansen att
+                utveckla träning och kostupplägg för att det ska passa kundens
+                behov och förutsättningar. Jag hittar vägar för att människor
+                ska bli smärtfria och kunna träna hårt igen.
+              </p>
+              <p className="text-black-50 mb-3">
+                Jag har alltid befunnit mig i miljöer där teamkänslan är viktig.
+                Lagsporter var en stor del av min uppväxt och ungdom. Jag
+                beslutade mig för att bli tränare och hjälpa personer med deras
+                hälsa efter att jag hade jobbat på ett HVB hem. Jag såg andra
+                tränare, både fysiskt och online, som jobbade med träning och
+                kost men glömde det viktigaste, helheten!
+              </p>
+
+              <p className="text-black-50 mb-3">
+                Alla kan betala för ett kost- & träningsprogram. Att få allting
+                att fungera som leder till resultat är en annan sak. Möjligheten
+                att få ta del av en annan persons liv, se över behov och
+                förutsättningar för att sen pussla om för att få allting att
+                fungera och bli långvarigt. Det är ingen enkel resa, men den
+                känslan av att få allting att fungera utefter hur du vill, det
+                triggar mig. Jag krigar så länge du krigar. Du avgör hur mycket
+                jag investerar i dig. Ge mig 100% så ger jag dig 110%. Valet
+                ligger alltid hos individen själv, inte hos
+                verktygsleverantören.
               </p>
             </div>
           </div>
@@ -82,8 +97,8 @@ const IndexPage = () => (
               <div className="col-md-4 mb-3 mb-md-0">
                 <div className="card py-4 h-100">
                   <div className="card-body text-center">
-                    <i className="fas fa-hands-helping text-primary mb-2"></i>
-                    <h4 className="text-uppercase m-0">Paket 1</h4>
+                    <i className="fas fa-globe-europe text-primary mb-2"></i>
+                    <h4 className="text-uppercase m-0">Online</h4>
                     <hr className="my-4" />
                     <div className="small text-black-50">
                       <ul className="check-list">
@@ -98,8 +113,8 @@ const IndexPage = () => (
               <div className="col-md-4 mb-3 mb-md-0">
                 <div className="card py-4 h-100">
                   <div className="card-body text-center">
-                    <i className="fas fa-dumbbell text-primary mb-2"></i>
-                    <h4 className="text-uppercase m-0">Paket 2</h4>
+                    <i className="fas fa-city text-primary mb-2"></i>
+                    <h4 className="text-uppercase m-0">Företag</h4>
                     <hr className="my-4" />
                     <div className="small text-black-50">
                       <ul className="check-list">
@@ -115,8 +130,8 @@ const IndexPage = () => (
               <div className="col-md-4 mb-3 mb-md-0">
                 <div className="card py-4 h-100">
                   <div className="card-body text-center">
-                    <i className="fas fa-gem text-primary mb-2"></i>
-                    <h4 className="text-uppercase m-0">Paket 3</h4>
+                    <i className="fas fa-user text-primary mb-2"></i>
+                    <h4 className="text-uppercase m-0">Privat</h4>
                     <hr className="my-4" />
                     <div className="small text-black-50">
                       <ul className="check-list">
