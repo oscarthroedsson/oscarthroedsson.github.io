@@ -1,22 +1,22 @@
-@import './bootstrap/bootstrap.min.css';
-@import 'variables.scss';
-@import 'mixins.scss';
-@import 'navbar.scss';
-@import 'masthead.scss';
-@import 'buttons.scss';
-@import 'about.scss';
-@import 'quote.scss';
-@import 'projects.scss';
-@import 'signup.scss';
-@import 'contact.scss';
-@import 'packages.scss';
+@import "./bootstrap/bootstrap.min.css";
+@import "variables.scss";
+@import "mixins.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "buttons.scss";
+@import "about.scss";
+@import "quote.scss";
+@import "projects.scss";
+@import "signup.scss";
+@import "contact.scss";
+@import "packages.scss";
 
-@import './fontawesome/css/all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
-@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+@import "./fontawesome/css/all.min.css";
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
 
 body {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   letter-spacing: 0.0625em;
 }
 
@@ -52,4 +52,30 @@ ul.check-list {
 
 footer {
   padding: 5rem 0;
+}
+
+.button-radio {
+  position: absolute;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+// label
+.button-radio + label {
+  user-select: none;
+  cursor: pointer;
+  line-height: 1.4;
+  background: $secondary;
+  color: $primary;
+  padding: 20px;
+  width: 100%;
+  font-weight: 600;
+
+  &:hover {
+    background: #9c9c9c;
+  }
 }

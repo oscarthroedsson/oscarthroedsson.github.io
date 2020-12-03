@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import SocialLinks from "../components/SocialLinks";
 import Header from "../components/Header";
+import Contact from "../components/Contact";
 import aboutImage from "../assets/images/about.jpg";
 import testimonial1 from "../assets/images/testimonial1.jpg";
 import testimonial2 from "../assets/images/testimonial2.jpg";
@@ -194,62 +195,8 @@ const IndexPage = () => (
     </section>
 
     <section id="contact" className="signup-section">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-10 col-lg-8 mx-auto text-center">
-            <h2 className="text-white mb-5">Kontakt</h2>
-
-            <form>
-              <div className="row">
-                <div className="form-group col-md-6">
-                  <label className="text-white" htmlFor="firstName">
-                    Förnamn
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="firstName"
-                  ></input>
-                </div>
-                <div className="form-group col-md-6">
-                  <label className="text-white" htmlFor="lastName">
-                    Efternamn
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="lastName"
-                  ></input>
-                </div>
-              </div>
-              <div className="row">
-                <div className="form-group col-md-6">
-                  <label className="text-white" htmlFor="email">
-                    E-post
-                  </label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                  ></input>
-                </div>
-
-                <div className="form-group col-md-6">
-                  <label className="text-white" htmlFor="phone">
-                    Telefonnummer
-                  </label>
-                  <input type="tel" className="form-control" id="phone"></input>
-                </div>
-              </div>
-              <button type="submit" className="btn btn-primary mx-auto">
-                Skicka
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+      <Contact />
     </section>
-
     <SocialLinks />
     <Footer />
   </Layout>
