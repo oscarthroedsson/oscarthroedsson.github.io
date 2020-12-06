@@ -146,7 +146,7 @@ const Contact = () => {
                 ></StepFive>
               )}
               {step === 6 && (
-                <h3 className="text-white">Tack för att du hörde av dig.</h3>
+                <h3 className="text-white">Tack för din intresseanmälan.</h3>
               )}
             </form>
           </div>
