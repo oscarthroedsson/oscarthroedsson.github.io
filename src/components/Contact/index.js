@@ -95,60 +95,64 @@ const Contact = () => {
     ).then(() => setStep(6));
   };
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-10 col-lg-8 mx-auto text-center">
-          <h2 className="text-white mb-5">Intresseanmälan</h2>
+    <section id="contact" className="signup-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-10 col-lg-8 mx-auto text-center">
+            <h2 className="text-white mb-5">Intresseanmälan</h2>
 
-          <form>
-            {step === 1 && <StepOne onChangeGoal={handleChangeGoal}></StepOne>}
-            {step === 2 && (
-              <StepTwo
-                onChangeGender={handleChangeGender}
-                onClickPrevious={handlePrevious}
-              ></StepTwo>
-            )}
-            {step === 3 && (
-              <StepThree
-                handlePrevious={handlePrevious}
-                handleNext={handleNext}
-                onChangeAge={handleChangeAge}
-                onChangeLength={handleChangeLength}
-                onChangeWeight={handleChangeWeight}
-                age={age}
-                length={length}
-                weight={weight}
-              ></StepThree>
-            )}
-            {step === 4 && (
-              <StepFour
-                handlePrevious={handlePrevious}
-                handleNext={handleNext}
-                onChangeFirstName={handleChangeFirstName}
-                onChangeLastName={handleChangeLastName}
-                onChangeEmail={handleChangeEmail}
-                onChangePhone={handleChangePhone}
-                firstName={firstName}
-                lastName={lastName}
-                email={email}
-                phone={phone}
-              ></StepFour>
-            )}
-            {step === 5 && (
-              <StepFive
-                onChangeDescription={handleChangeDescription}
-                handlePrevious={handlePrevious}
-                handleSubmit={handleSubmit}
-                description={description}
-              ></StepFive>
-            )}
-            {step === 6 && (
-              <h3 className="text-white">Tack för att du hörde av dig.</h3>
-            )}
-          </form>
+            <form>
+              {step === 1 && (
+                <StepOne onChangeGoal={handleChangeGoal}></StepOne>
+              )}
+              {step === 2 && (
+                <StepTwo
+                  onChangeGender={handleChangeGender}
+                  onClickPrevious={handlePrevious}
+                ></StepTwo>
+              )}
+              {step === 3 && (
+                <StepThree
+                  handlePrevious={handlePrevious}
+                  handleNext={handleNext}
+                  onChangeAge={handleChangeAge}
+                  onChangeLength={handleChangeLength}
+                  onChangeWeight={handleChangeWeight}
+                  age={age}
+                  length={length}
+                  weight={weight}
+                ></StepThree>
+              )}
+              {step === 4 && (
+                <StepFour
+                  handlePrevious={handlePrevious}
+                  handleNext={handleNext}
+                  onChangeFirstName={handleChangeFirstName}
+                  onChangeLastName={handleChangeLastName}
+                  onChangeEmail={handleChangeEmail}
+                  onChangePhone={handleChangePhone}
+                  firstName={firstName}
+                  lastName={lastName}
+                  email={email}
+                  phone={phone}
+                ></StepFour>
+              )}
+              {step === 5 && (
+                <StepFive
+                  onChangeDescription={handleChangeDescription}
+                  handlePrevious={handlePrevious}
+                  handleSubmit={handleSubmit}
+                  description={description}
+                ></StepFive>
+              )}
+              {step === 6 && (
+                <h3 className="text-white">Tack för att du hörde av dig.</h3>
+              )}
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
