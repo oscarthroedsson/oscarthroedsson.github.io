@@ -1,4 +1,5 @@
 import React from "react";
+import Scroll from "../Scroll";
 import aboutImage from "../../assets/images/about.jpg";
 
 const About = () => {
@@ -6,7 +7,6 @@ const About = () => {
     <section id="about" className="projects-section bg-light">
       <div className="container">
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
-          {" "}
           <div className="col-xl-5 col-lg-4">
             <img className="img-fluid mb-3 mb-lg-0" src={aboutImage} alt="" />
           </div>
@@ -16,31 +16,35 @@ const About = () => {
               <p className="text-black-50 mb-3">
                 Med glimten i ögat och ett driv för resultat så ser jag till att
                 din träning går framåt men också är rolig på samma gång. Med
-                över 10 000h+ på golvet med kunder så har jag fått chansen att
-                utveckla träning och kostupplägg för att det ska passa kundens
-                behov och förutsättningar. Jag hittar vägar för att människor
-                ska bli smärtfria och kunna träna hårt igen.
+                över 10 000 timmar på golvet med kunder så har jag fått chansen
+                att utveckla träning och kostupplägg för att det ska passa
+                kundens behov och förutsättningar. Tillsammans hittar vi vägen
+                för att du ska lyckas.
               </p>
               <p className="text-black-50 mb-3">
-                Jag har alltid befunnit mig i miljöer där teamkänslan är viktig.
-                Lagsporter var en stor del av min uppväxt och ungdom. Jag
-                beslutade mig för att bli tränare och hjälpa personer med deras
-                hälsa efter att jag hade jobbat på ett HVB hem. Jag såg andra
-                tränare, både fysiskt och online, som jobbade med träning och
-                kost men glömde det viktigaste, helheten!
+                Jag förespråkar långsiktighet. En plan ska sättas utifrån
+                förutsättningar och behov, inte enbart en persons vilja. Ofta är
+                en vilja eller önskan en bild på kommande slutdestination. Den
+                visar inte vägen eller vilka redskap som ska användas och hur de
+                ska användas. Med min erfarenhet inom HVB-verksamhet och med
+                tidigare kunder så är bilden ganska klar. De som investerar tid
+                i sin förändring är de som lyckas, de som kör 12 veckor, kommer
+                ofta tillbaka några månader senare. Hur många gånger tidigare
+                har du försökt tills du kom över min sida?
               </p>
 
               <p className="text-black-50 mb-3">
-                Alla kan betala för ett kost- & träningsprogram. Att få allting
-                att fungera som leder till resultat är en annan sak. Möjligheten
-                att få ta del av en annan persons liv, se över behov och
-                förutsättningar för att sen pussla om för att få allting att
-                fungera och bli långvarigt. Det är ingen enkel resa, men den
-                känslan av att få allting att fungera utefter hur du vill, det
-                triggar mig. Jag krigar så länge du krigar. Du avgör hur mycket
-                jag investerar i dig. Ge mig 100% så ger jag dig 110%. Valet
-                ligger alltid hos individen själv, inte hos
-                verktygsleverantören.
+                Jag är inte PTn som kommer att skrika på dig eller berätta allt
+                du gör fel. Snedsteg kommer att ske, och det är okej. Jag kommer
+                att stötta dig oavsett svårigheter och jag ger inte upp så länge
+                du inte gör det. Ett huvud är smart, men två är smartare och
+                tillsammans kommer vi att lyckas.
+              </p>
+              <p className="text-black-50 mb-3">
+                Online eller fysiska träffar? Välj du,{" "}
+                <Scroll type="id" element="contact">
+                  <a href="#contact">ansök här!</a>
+                </Scroll>
               </p>
             </div>
           </div>

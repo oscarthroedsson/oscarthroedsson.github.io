@@ -90,7 +90,7 @@ export default class Header extends Component {
                   element="packages"
                 >
                   <a className="nav-link" href="#packages">
-                    Priser & Paket
+                    Tjänster
                   </a>
                 </Scroll>
               </li>

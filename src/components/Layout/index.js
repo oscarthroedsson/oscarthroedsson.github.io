@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
 
-import '../../assets/sass/grayscale.scss';
+import "../../assets/sass/grayscale.scss";
 
 class Layout extends Component {
   render() {
@@ -19,24 +19,24 @@ class Layout extends Component {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
                 {
-                  name: 'description',
-                  content: 'När hälsa blir en investering.',
+                  name: "description",
+                  content: "När hälsa blir en investering.",
                 },
                 {
-                  name: 'keywords',
-                  content: 'personlig tränare, pt, coach, träning, hälsa',
+                  name: "keywords",
+                  content: "personlig tränare, pt, coach, träning, hälsa",
                 },
               ]}
             >
               <html lang="en" />
             </Helmet>
-            <div className={'page-top'}>{children}</div>
+            <div className={"page-top"}>{children}</div>
           </>
         )}
       />

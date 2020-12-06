@@ -7,7 +7,7 @@ const Packages = () => {
       <div className="container">
         <div className="row text-center">
           <div className="col-lg-8 mx-auto">
-            <h2 className="text-primary mb-4">Priser & Paket</h2>
+            <h2 className="text-primary mb-4">Tjänster</h2>
           </div>
         </div>
         <div className="row">
