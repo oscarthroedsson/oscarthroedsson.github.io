@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
@@ -85,8 +85,6 @@ const Contact = () => {
     formData.append("entry.1736229252", phone);
     formData.append("entry.522566656", description);
 
-    console.log(formData);
-
     fetch(
       "https://docs.google.com/forms/u/5/d/e/1FAIpQLSeEiKVe8tPSZc7JseRlJ6m1y6gYVHPKdiUDhZ-iPZIYziXjJQ/formResponse",
       {
@@ -117,6 +115,9 @@ const Contact = () => {
                 onChangeAge={handleChangeAge}
                 onChangeLength={handleChangeLength}
                 onChangeWeight={handleChangeWeight}
+                age={age}
+                length={length}
+                weight={weight}
               ></StepThree>
             )}
             {step === 4 && (
@@ -127,6 +128,10 @@ const Contact = () => {
                 onChangeLastName={handleChangeLastName}
                 onChangeEmail={handleChangeEmail}
                 onChangePhone={handleChangePhone}
+                firstName={firstName}
+                lastName={lastName}
+                email={email}
+                phone={phone}
               ></StepFour>
             )}
             {step === 5 && (
@@ -134,6 +139,7 @@ const Contact = () => {
                 onChangeDescription={handleChangeDescription}
                 handlePrevious={handlePrevious}
                 handleSubmit={handleSubmit}
+                description={description}
               ></StepFive>
             )}
             {step === 6 && (
