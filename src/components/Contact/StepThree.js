@@ -1,6 +1,15 @@
 import React from "react";
 
-const StepThree = ({ handleNext, handlePrevious }) => {
+const StepThree = ({
+  handleNext,
+  handlePrevious,
+  onChangeAge,
+  onChangeWeight,
+  onChangeLength,
+  age,
+  weight,
+  length,
+}) => {
   return (
     <React.Fragment>
       <div className="row">
@@ -9,33 +18,36 @@ const StepThree = ({ handleNext, handlePrevious }) => {
             Ålder
           </label>
           <input
-            required
             type="number"
             className="form-control"
             id="age"
-          ></input>
+            value={age}
+            onChange={(e) => onChangeAge(e)}
+          />
         </div>
         <div className="form-group col-md-4">
           <label className="text-white" htmlFor="weight">
             Vikt
           </label>
           <input
-            required
             type="number"
             className="form-control"
             id="weight"
-          ></input>
+            value={weight}
+            onChange={(e) => onChangeWeight(e)}
+          />
         </div>
         <div className="form-group col-md-4">
           <label className="text-white" htmlFor="length">
             Längd
           </label>
           <input
-            required
             type="number"
             className="form-control"
             id="length"
-          ></input>
+            value={length}
+            onChange={(e) => onChangeLength(e)}
+          />
         </div>
       </div>
       <div className="row">

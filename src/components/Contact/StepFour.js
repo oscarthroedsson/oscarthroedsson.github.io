@@ -1,6 +1,17 @@
 import React from "react";
 
-const StepFour = ({ handlePrevious, handleSubmit }) => {
+const StepFour = ({
+  handlePrevious,
+  handleNext,
+  onChangeFirstName,
+  onChangeLastName,
+  onChangeEmail,
+  onChangePhone,
+  firstName,
+  lastName,
+  email,
+  phone,
+}) => {
   return (
     <React.Fragment>
       <div className="row">
@@ -9,44 +20,48 @@ const StepFour = ({ handlePrevious, handleSubmit }) => {
             Förnamn
           </label>
           <input
-            required
             type="text"
             className="form-control"
             id="firstName"
-          ></input>
+            value={firstName}
+            onChange={(e) => onChangeFirstName(e)}
+          />
         </div>
         <div className="form-group col-md-6">
           <label className="text-white" htmlFor="lastName">
             Efternamn
           </label>
           <input
-            required
             type="text"
             className="form-control"
             id="lastName"
-          ></input>
+            value={lastName}
+            onChange={(e) => onChangeLastName(e)}
+          />
         </div>
         <div className="form-group col-md-6">
           <label className="text-white" htmlFor="email">
             Email
           </label>
           <input
-            required
             type="email"
             className="form-control"
             id="email"
-          ></input>
+            value={email}
+            onChange={(e) => onChangeEmail(e)}
+          />
         </div>
         <div className="form-group col-md-6">
           <label className="text-white" htmlFor="phone">
             Telefon
           </label>
           <input
-            required
             type="tel"
             className="form-control"
             id="phone"
-          ></input>
+            value={phone}
+            onChange={(e) => onChangePhone(e)}
+          />
         </div>
       </div>
       <div className="row">
@@ -59,9 +74,9 @@ const StepFour = ({ handlePrevious, handleSubmit }) => {
           </button>
           <button
             className="btn btn-primary float-right"
-            onClick={(e) => handleSubmit(e)}
+            onClick={(e) => handleNext(e, 4)}
           >
-            Skicka
+            Nästa
           </button>
         </div>
       </div>

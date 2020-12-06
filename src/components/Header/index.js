@@ -1,34 +1,34 @@
-import React, { Component } from 'react';
-import Scroll from '../Scroll';
+import React, { Component } from "react";
+import Scroll from "../Scroll";
 export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
       openMenu: false,
-      visibilityClass: '',
+      visibilityClass: "",
     };
   }
-  toggleMenu = value => {
+  toggleMenu = (value) => {
     this.setState({ openMenu: value });
   };
   handleScroll = () => {
     const { visibilityClass } = this.state;
     if (window.pageYOffset > 300) {
-      if (visibilityClass !== 'navbar-shrink') {
-        this.setState({ visibilityClass: 'navbar-shrink' });
+      if (visibilityClass !== "navbar-shrink") {
+        this.setState({ visibilityClass: "navbar-shrink" });
       }
     } else {
-      if (visibilityClass === 'navbar-shrink') {
-        this.setState({ visibilityClass: '' });
+      if (visibilityClass === "navbar-shrink") {
+        this.setState({ visibilityClass: "" });
       }
     }
   };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   }
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   render() {
@@ -43,9 +43,9 @@ export default class Header extends Component {
             Oscar Throedsson
           </a>
           <button
-            onClick={_ => this.toggleMenu(!openMenu)}
+            onClick={(_) => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
-              openMenu ? '' : 'collapsed'
+              openMenu ? "" : "collapsed"
             }`}
             type="button"
             aria-controls="navbarResponsive"
@@ -55,13 +55,13 @@ export default class Header extends Component {
             <i className="fas fa-bars"></i>
           </button>
           <div
-            className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
+            className={`collapse navbar-collapse ${openMenu ? "show" : ""}`}
             id="navbarResponsive"
           >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
+                  onClick={(_) => this.toggleMenu(!openMenu)}
                   type="id"
                   element="vision"
                 >
@@ -73,7 +73,7 @@ export default class Header extends Component {
 
               <li className="nav-item">
                 <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
+                  onClick={(_) => this.toggleMenu(!openMenu)}
                   type="id"
                   element="about"
                 >
@@ -85,7 +85,7 @@ export default class Header extends Component {
 
               <li className="nav-item">
                 <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
+                  onClick={(_) => this.toggleMenu(!openMenu)}
                   type="id"
                   element="packages"
                 >
@@ -96,12 +96,12 @@ export default class Header extends Component {
               </li>
               <li className="nav-item">
                 <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
+                  onClick={(_) => this.toggleMenu(!openMenu)}
                   type="id"
                   element="contact"
                 >
                   <a className="nav-link" href="#contact">
-                    Kontakt
+                    Anmäl ditt intresse
                   </a>
                 </Scroll>
               </li>
