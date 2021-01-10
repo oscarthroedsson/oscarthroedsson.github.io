@@ -1,7 +1,9 @@
-import React from "react";
-import About from "../About";
+import React, { useState } from "react";
 
 const Packages = () => {
+  const [groupExpanded, setGroupExpanded] = useState(false);
+  const [oneOnOneExpanded, setOneOnOneExpanded] = useState(false);
+
   return (
     <section id="packages" className="packages-section">
       <div className="container">
@@ -12,20 +14,33 @@ const Packages = () => {
         </div>
         <div className="row d-flex justify-content-center">
           <div className="col-md-7">
-            <div className="card py-4 h-100">
+            <div className="card h-100">
               <div className="card-body">
                 <div className="text-center">
                   <i className="fas fa-dumbbell text-primary mb-2"></i>
-                  <h4 className="text-uppercase m-0">PT Online Grupp</h4>
+                  <h3 className="text-uppercase m-0">PT Online Grupp</h3>
                 </div>
-                <hr className="my-4" />
-                <div className="small text-black-50">
-                  <p className="text-left">
-                    Gör din resa med likasinnade. Tillsammans delar vi
-                    frågeställningar och lösningar för att slippa göra resan
-                    ensam. Det blir även roligare och mer lärorikt.
-                  </p>
-                  <h5>Detta ingår</h5>
+
+                <p className="small text-black-50 mt-3">
+                  Gör din resa med likasinnade. Tillsammans delar vi
+                  frågeställningar och lösningar för att slippa göra resan
+                  ensam. Det blir även roligare och mer lärorikt.
+                </p>
+              </div>
+
+              <h4
+                className="expand text-center"
+                onClick={() => setGroupExpanded(!groupExpanded)}
+              >
+                Detta ingår
+              </h4>
+
+              <div
+                className={`small text-black-50 expandable ${
+                  groupExpanded ? "expanded" : ""
+                }`}
+              >
+                <div className="card-body">
                   <ul className="check-list">
                     <li>
                       <span className="font-weight-bold">Analys</span>
@@ -92,7 +107,7 @@ const Packages = () => {
                       </p>
                     </li>
                   </ul>
-                  <h5>Tillägg</h5>
+                  <h4>Tillägg</h4>
                   <p>
                     Mina rekommendationer kommer att utgå från gruppens
                     utgångsläge och inte sälja på en massa tillägg. Känner du
@@ -107,7 +122,7 @@ const Packages = () => {
                     <li>Nytt kostprogram: 1000kr/program. </li>
                     <li>Justering kostprogram: 800kr/justering.</li>
                   </ul>
-                  <h5>Prisinformation*</h5>
+                  <h4>Prisinformation*</h4>
                   <p>Startavgift: engångsavgift 1200kr</p>
                   <p>Månadsavgift: + 500kr/månad</p>
                   <p>Månadspris för gruppen: 3500kr</p>
@@ -120,21 +135,33 @@ const Packages = () => {
 
         <div className="row d-flex justify-content-center mt-5">
           <div className="col-md-7">
-            <div className="card py-4 h-100">
+            <div className="card h-100">
               <div className="card-body">
                 <div className="text-center">
                   <i className="fas fa-globe-europe text-primary mb-2"></i>
-                  <h4 className="text-uppercase m-0">PT Online 1 on 1</h4>
+                  <h3 className="text-uppercase m-0">PT Online 1 on 1</h3>
                 </div>
-                <hr className="my-4" />
-                <div className="small text-black-50">
-                  <p className="text-left">
-                    Vill du inte binda upp din tid men fortfarande få ett
-                    komplett paket? Genom Online så checkar du in varje söndag
-                    när det passar dig. Får alla verktyg som behövs för att du
-                    ska nå din målsättning.
-                  </p>
-                  <h5>Detta ingår</h5>
+                <p className="small text-black-50 mt-4">
+                  Vill du inte binda upp din tid men fortfarande få ett komplett
+                  paket? Genom Online så checkar du in varje söndag när det
+                  passar dig. Får alla verktyg som behövs för att du ska nå din
+                  målsättning.
+                </p>
+              </div>
+
+              <h4
+                className="expand text-center"
+                onClick={() => setOneOnOneExpanded(!oneOnOneExpanded)}
+              >
+                Detta ingår
+              </h4>
+
+              <div
+                className={`small text-black-50 expandable ${
+                  oneOnOneExpanded ? "expanded" : ""
+                }`}
+              >
+                <div className="card-body">
                   <ul className="check-list">
                     <li>Träningsprogram</li>
                     <li>
@@ -145,7 +172,7 @@ const Packages = () => {
                     <li>Program som trackar din progress</li>
                     <li>Löpande kommunikation via program</li>
                   </ul>
-                  <h5>Tillägg*</h5>
+                  <h4>Tillägg*</h4>
                   <ul className="check-list">
                     <li>Extra check-in (550kr/tillfälle) </li>
                     <li>Ett extra kostprogram (850kr/st) </li>
