@@ -10,13 +10,13 @@
       #{fade-out($black, 0.3)} 75%,
       $primary 100%
     ),
-    url('../images/bg-masthead.jpg');
+    url("../images/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   h1 {
-    font-family: 'Varela Round';
+    font-family: "Varela Round";
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.8rem;

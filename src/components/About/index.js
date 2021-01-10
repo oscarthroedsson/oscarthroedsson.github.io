@@ -28,9 +28,8 @@ const About = () => {
                 visar inte vägen eller vilka redskap som ska användas och hur de
                 ska användas. Med min erfarenhet inom HVB-verksamhet och med
                 tidigare kunder så är bilden ganska klar. De som investerar tid
-                i sin förändring är de som lyckas, de som kör 12 veckor, kommer
-                ofta tillbaka några månader senare. Hur många gånger tidigare
-                har du försökt tills du kom över min sida?
+                i sin förändring är de som lyckas. Hur många gånger tidigare har
+                du försökt tills du kom över min sida?
               </p>
 
               <p className="text-black-50 mb-3">
