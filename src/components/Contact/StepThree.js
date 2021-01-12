@@ -1,68 +1,161 @@
 import React from "react";
 
 const StepThree = ({
-  handleNext,
-  handlePrevious,
-  onChangeAge,
-  onChangeWeight,
-  onChangeLength,
-  age,
-  weight,
-  length,
+  dayDescription,
+  onChangeDayDescription,
+  numberOfTries,
+  onChangeNumberOfTries,
+  failureReason,
+  onChangeFailureReason,
+  goalImportance,
+  onChangeGoalImportance,
+  whyNotMax,
+  onChangeWhyNotMax,
+  howLongGoal,
+  onChangeHowLongGoal,
+  onSubmit,
+  onChangePrevious,
+  onChangeAcceptTerms,
 }) => {
+  const renderGoalImportance = (number) => {
+    return (
+      <div className="form-check form-check-inline">
+        <input
+          className="form-check-input"
+          type="radio"
+          id={`goal${number}`}
+          value={number}
+          checked={goalImportance == number}
+          onChange={(e) => onChangeGoalImportance(e)}
+        />
+        <label
+          className="form-check-label text-white"
+          htmlFor={`goal${number}`}
+        >
+          {number}
+        </label>
+      </div>
+    );
+  };
   return (
     <React.Fragment>
       <div className="row">
-        <div className="form-group col-md-4">
-          <label className="text-white" htmlFor="age">
-            Ålder
+        <div className="form-group col-md-12">
+          <label className="text-white" htmlFor="dayDescription">
+            Hur ser din vardag ut? Jobb, familj, studier och allmän fritid.
           </label>
-          <input
-            type="number"
+          <textarea
             className="form-control"
-            id="age"
-            value={age}
-            onChange={(e) => onChangeAge(e)}
+            id="dayDescription"
+            value={dayDescription}
+            onChange={(e) => onChangeDayDescription(e)}
           />
         </div>
-        <div className="form-group col-md-4">
-          <label className="text-white" htmlFor="weight">
-            Vikt
+        <div className="form-group col-md-12">
+          <label className="text-white" htmlFor="numberOfTries">
+            Hur många gånger har du försökt att uppnå angiven målsättning?
           </label>
           <input
-            type="number"
+            type="text"
             className="form-control"
-            id="weight"
-            value={weight}
-            onChange={(e) => onChangeWeight(e)}
+            id="numberOfTries"
+            value={numberOfTries}
+            onChange={(e) => onChangeNumberOfTries(e)}
           />
         </div>
-        <div className="form-group col-md-4">
-          <label className="text-white" htmlFor="length">
-            Längd
+        <div className="form-group col-md-12">
+          <label className="text-white" htmlFor="failureReason">
+            Varför har du inte klarat av att nå din målsättning?
           </label>
-          <input
-            type="number"
+          <textarea
             className="form-control"
-            id="length"
-            value={length}
-            onChange={(e) => onChangeLength(e)}
+            id="failureReason"
+            value={failureReason}
+            onChange={(e) => onChangeFailureReason(e)}
           />
         </div>
+        <div className="form-group col-md-12">
+          <label className="text-white">
+            Hur viktigt är det att nå din målsättning?
+          </label>
+        </div>
+        <div className="form-group col-md-12">
+          {renderGoalImportance(1)}
+          {renderGoalImportance(2)}
+          {renderGoalImportance(3)}
+          {renderGoalImportance(4)}
+          {renderGoalImportance(5)}
+          {renderGoalImportance(6)}
+          {renderGoalImportance(7)}
+          {renderGoalImportance(8)}
+          {renderGoalImportance(9)}
+          {renderGoalImportance(10)}
+        </div>
+
+        {goalImportance != 10 && (
+          <div className="form-group col-md-12">
+            <label className="text-white" htmlFor="whyNotMax">
+              Varför inte 10?
+            </label>
+            <textarea
+              className="form-control"
+              id="whyNotMax"
+              value={whyNotMax}
+              onChange={(e) => onChangeWhyNotMax(e)}
+            />
+          </div>
+        )}
+        <div className="form-group col-md-12">
+          <label className="text-white" htmlFor="howLongGoal">
+            Hur länge har du haft angiven målsättning?
+          </label>
+          <textarea
+            className="form-control"
+            id="howLongGoal"
+            value={howLongGoal}
+            onChange={(e) => onChangeHowLongGoal(e)}
+          />
+        </div>
+      </div>
+      <div className="row">
+        <div className="form-group col-md-12 text-left">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input mr-3"
+              type="checkbox"
+              id="acceptTerms"
+              onChange={(e) => onChangeAcceptTerms(e)}
+            />
+            <label
+              className="form-check-label text-white"
+              htmlFor="acceptTerms"
+            >
+              Jag förstår att denna ansökan är bindande och att jag inte kan
+              ångra min anmälan efter att ha blivit tilldelad en profil och
+              träningsprogram (ev: kostprogram). Läs mer om ångerrätt.
+            </label>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-12 text-left text-white">
+        <p>
+          Har du inte blivit tilldelad en profil eller träningsprogram kan du
+          ångra din ansökan inom 14 dagar.
+        </p>
       </div>
       <div className="row">
         <div className="form-group col-md-12">
           <button
             className="btn btn-secondary float-left"
-            onClick={(e) => handlePrevious(e, 3)}
+            onClick={(e) => onChangePrevious(e, 3)}
           >
             Föreågende
           </button>
           <button
             className="btn btn-primary float-right"
-            onClick={(e) => handleNext(e, 3)}
+            onClick={(e) => onSubmit(e)}
           >
-            Nästa
+            Let's go!
           </button>
         </div>
       </div>

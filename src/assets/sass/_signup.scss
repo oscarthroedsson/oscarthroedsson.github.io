@@ -1,4 +1,13 @@
 .signup-section {
+  .info {
+    background: $secondary;
+    opacity: 0.8;
+    padding: 10px;
+    margin: 20px 0;
+    p {
+      margin: 0;
+    }
+  }
   padding: 10rem 0;
   background: linear-gradient(
       to bottom,
@@ -6,7 +15,7 @@
       #{fade-out($primary, 0.5)} 75%,
       $primary 100%
     ),
-    url('../images/footer.jpg');
+    url("../images/footer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -16,7 +25,7 @@
       box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
       padding: 1.25rem 2rem;
       height: auto;
-      font-family: 'Varela Round';
+      font-family: "Varela Round";
       font-size: 80%;
       text-transform: uppercase;
       letter-spacing: 0.15rem;
