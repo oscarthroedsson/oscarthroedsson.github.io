@@ -178,7 +178,7 @@ const Contact = () => {
     ).then(() => setStep(4));
   };
   return (
-    <section id="contact" className="signup-section">
+    <section id="anmalan" className="signup-section">
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-lg-8 mx-auto text-center">

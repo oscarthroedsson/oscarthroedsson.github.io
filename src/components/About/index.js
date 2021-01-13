@@ -4,7 +4,7 @@ import aboutImage from "../../assets/images/about.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="projects-section bg-light">
+    <section id="om" className="projects-section bg-light">
       <div className="container">
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
           <div className="col-xl-5 col-lg-4">

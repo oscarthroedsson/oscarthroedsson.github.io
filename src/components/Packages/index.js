@@ -5,7 +5,7 @@ const Packages = () => {
   const [oneOnOneExpanded, setOneOnOneExpanded] = useState(false);
 
   return (
-    <section id="packages" className="packages-section">
+    <section id="tjanster" className="packages-section">
       <div className="container">
         <div className="row text-center">
           <div className="col-lg-8 mx-auto">
