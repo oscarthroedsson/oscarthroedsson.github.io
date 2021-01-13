@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { CookiesProvider } from "react-cookie";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import CookieBanner from "../CookieBanner";
 
 import "../../assets/sass/grayscale.scss";
 
@@ -38,7 +40,10 @@ class Layout extends Component {
             >
               <html lang="sv" />
             </Helmet>
-            <div className={"page-top"}>{children}</div>
+            <CookiesProvider>
+              <div className={"page-top"}>{children}</div>
+              <CookieBanner></CookieBanner>
+            </CookiesProvider>
           </>
         )}
       />
