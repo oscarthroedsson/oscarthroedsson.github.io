@@ -4,13 +4,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(
-      to bottom,
-      #{fade-out($black, 0.7)} 0%,
-      #{fade-out($black, 0.3)} 75%,
-      $primary 100%
-    ),
-    url("../images/bg-masthead.jpg");
+  background: linear-gradient(to right, #00587ccc, #00587ccc),
+    url("../images/bg-masthead.jpg") no-repeat top center;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -29,12 +24,20 @@
   }
   h2 {
     max-width: 20rem;
+    font-size: 2.5rem;
+    color: $white;
+  }
+  p {
+    color: $white;
     font-size: 1rem;
   }
   @media (min-width: 768px) {
     h1 {
       font-size: 4rem;
       line-height: 4rem;
+    }
+    p {
+      font-size: 1.3rem;
     }
   }
   @media (min-width: 992px) {
@@ -47,7 +50,7 @@
     }
     h2 {
       max-width: 30rem;
-      font-size: 1.25rem;
+      font-size: 3rem;
     }
   }
 }

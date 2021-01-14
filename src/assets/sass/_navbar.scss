@@ -1,6 +1,9 @@
 #mainNav {
   min-height: 56px;
   background-color: $white;
+  .logo {
+    max-width: 200px;
+  }
   .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;

@@ -130,9 +130,13 @@ const StepThree = ({
               className="form-check-label text-white"
               htmlFor="acceptTerms"
             >
-              Jag förstår att denna ansökan är bindande och att jag inte kan
-              ångra min anmälan efter att ha blivit tilldelad en profil och
-              träningsprogram (ev: kostprogram). Läs mer om ångerrätt.
+              Jag förstår att denna ansökan är bindande när jag har blivit
+              tilldelad en profil och ett träningsprogram (ev: kostprogram). Läs
+              mer om{" "}
+              <a href="/kopesavtal.pdf" target="_blank">
+                köpesavtalet.
+              </a>
+              .
             </label>
           </div>
         </div>

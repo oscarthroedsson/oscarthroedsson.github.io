@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Scroll from "../Scroll";
 import { Link } from "gatsby";
+import logo from "../../assets/images/logo.png";
 
 const Header = ({ logoOnly = false }) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -106,7 +107,7 @@ const Header = ({ logoOnly = false }) => {
     >
       <div className="container">
         <Link to="/" className="navbar-brand">
-          Oscar Throedsson
+          <img className="logo" src={logo}></img>
         </Link>
 
         {!logoOnly && renderMenu()}

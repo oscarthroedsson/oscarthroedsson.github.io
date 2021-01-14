@@ -40,9 +40,9 @@ const About = () => {
                 tillsammans kommer vi att lyckas.
               </p>
               <p className="text-black-50 mb-3">
-                Online eller fysiska träffar? Välj du,{" "}
-                <Scroll type="id" element="contact">
-                  <a href="#contact">ansök här!</a>
+                Redo för nästa steg?{" "}
+                <Scroll type="id" element="anmalan">
+                  <a href="#anmalan">Ansök här!</a>
                 </Scroll>
               </p>
             </div>
