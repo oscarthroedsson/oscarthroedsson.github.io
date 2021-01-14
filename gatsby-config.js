@@ -29,7 +29,7 @@ module.exports = {
           allowAdFeatures: false,
         },
         facebookPixel: {
-          pixelId: "2288804644682623",
+          pixelId: "230703775197255",
           cookieName: "acceptCookie",
         },
         environments: ["production"],
