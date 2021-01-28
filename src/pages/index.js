@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <Header />
 
-    <header className="masthead" id="page-top">
+    <header className="masthead" id="vision">
       <div className="container d-flex h-100 align-items-center">
         <div className="col-lg-10 mx-auto d-flex align-items-center flex-column text-center">
           <h2 className="mb-4">Min vision</h2>

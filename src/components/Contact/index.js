@@ -3,7 +3,7 @@ import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
 
-const Contact = () => {
+const Contact = ({ showPriceInfo }) => {
   const [step, setStep] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -184,6 +184,18 @@ const Contact = () => {
           <div className="col-md-10 col-lg-8 mx-auto text-center">
             <h2 className="text-white mb-5">Anmälan</h2>
             <div className="info">
+              {showPriceInfo && (
+                <React.Fragment>
+                  <h4>Prisinformation*</h4>
+                  <p>Startavgift: 1200kr</p>
+
+                  <p>Månadspris: 3500kr</p>
+                  <p className="font-italic mb-3">
+                    *Alla priser är inklusive moms
+                  </p>
+                </React.Fragment>
+              )}
+
               <p className="text-black-50">
                 Din ansökan är <u>bindande</u>.
               </p>
