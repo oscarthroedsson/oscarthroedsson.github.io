@@ -79,7 +79,7 @@ const StepThree = ({
             Hur viktigt är det att nå din målsättning?
           </label>
         </div>
-        <div className="form-group col-md-12">
+        <div className="form-group col-md-12 d-flex justify-content-between">
           {renderGoalImportance(1)}
           {renderGoalImportance(2)}
           {renderGoalImportance(3)}
@@ -90,6 +90,10 @@ const StepThree = ({
           {renderGoalImportance(8)}
           {renderGoalImportance(9)}
           {renderGoalImportance(10)}
+        </div>
+        <div className="col-md-12 text-white d-flex justify-content-between">
+          <p>Inte viktigt</p>
+          <p>Mycket viktigt</p>
         </div>
 
         {goalImportance != 10 && (

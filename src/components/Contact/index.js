@@ -117,11 +117,7 @@ const Contact = ({ showPriceInfo }) => {
       !email ||
       !streetAddress ||
       !postalCode ||
-      !city ||
-      !age ||
-      !length ||
-      !weight ||
-      !gender
+      !city
     ) {
       setErrorMessage("Vänligen fyll i alla fält innan du går vidare");
     } else {
