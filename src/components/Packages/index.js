@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Scroll from "../Scroll";
 
 const Packages = () => {
   const [groupExpanded, setGroupExpanded] = useState(false);
@@ -60,6 +61,13 @@ const Packages = () => {
                   <p>Månadspris: 3500kr</p>
                   <p className="font-italic">*Alla priser är inklusive moms</p>
                 </div>
+                <div className="row d-flex justify-content-center mb-5">
+                  <Scroll type="id" element="anmalan">
+                    <a href="#anmalan" className="btn btn-primary">
+                      Ansök
+                    </a>
+                  </Scroll>
+                </div>
               </div>
             </div>
           </div>
@@ -110,6 +118,13 @@ const Packages = () => {
                     <li>Ett extra kostprogram (850kr/st) </li>
                   </ul>
                   <p className="font-italic">*Alla priser är inklusive moms</p>
+                </div>
+                <div className="row d-flex justify-content-center mb-5">
+                  <Scroll type="id" element="anmalan">
+                    <a href="#anmalan" className="btn btn-primary">
+                      Ansök
+                    </a>
+                  </Scroll>
                 </div>
               </div>
             </div>
