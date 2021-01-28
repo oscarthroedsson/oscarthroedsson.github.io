@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{zxDK:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),o=t.n(a),r=t("Zttt"),c=t("Rnav"),l=t("rfQa");n.default=function(){return o.a.createElement(r.a,null,o.a.createElement(c.a,{logoOnly:!0}),o.a.createElement(l.a,{showPriceInfo:!0}))}}}]);
+//# sourceMappingURL=component---src-pages-livsforandringen-js-99721530ef3076428e4e.js.map
