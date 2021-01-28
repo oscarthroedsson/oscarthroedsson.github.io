@@ -9,7 +9,7 @@ const Header = ({ logoOnly = false }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 300) {
+      if (window.pageYOffset > 300 || logoOnly) {
         if (visibilityClass !== "navbar-shrink") {
           setVisibilityClass("navbar-shrink");
         }
@@ -107,7 +107,7 @@ const Header = ({ logoOnly = false }) => {
     >
       <div className="container">
         <Link to="/" className="navbar-brand">
-          <img className="logo" src={logo}></img>
+          Oscar Throedsson
         </Link>
 
         {!logoOnly && renderMenu()}
