@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: "G-ZQVK6G2P1B",
+          trackingId: "UA-184884895-1",
           cookieName: "acceptCookie",
           anonymize: true,
           allowAdFeatures: false,
