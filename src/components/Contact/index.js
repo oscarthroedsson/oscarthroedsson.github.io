@@ -189,6 +189,9 @@ const Contact = ({ showPriceInfo }) => {
                   <p className="font-italic mb-3">
                     *Alla priser är inklusive moms
                   </p>
+                  <p className="mb-3">
+                    Startdatum: 15/2 och pågår i sex månader
+                  </p>
                 </React.Fragment>
               )}
 

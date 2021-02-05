@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useCookies } from "react-cookie";
+import { useLocation } from "@reach/router";
+import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies";
 import { Link } from "gatsby";
 
 const CookieBanner = () => {
@@ -9,11 +11,14 @@ const CookieBanner = () => {
     cookies.acceptCookie === undefined ? false : true
   );
 
+  const location = useLocation();
+
   const handleAcceptCookies = () => {
     setCookie("acceptCookie", true, {
       expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1)),
     });
     setAcceptedCookie(true);
+    initializeAndTrack(location);
   };
 
   if (acceptedCookie) {

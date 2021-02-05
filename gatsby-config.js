@@ -29,13 +29,12 @@ module.exports = {
           allowAdFeatures: false,
         },
         facebookPixel: {
-          pixelId: "230703775197255",
+          pixelId: "873502146782253",
           cookieName: "acceptCookie",
         },
         environments: ["production"],
       },
     },
     "gatsby-plugin-sass",
-    "gatsby-plugin-offline",
   ],
 };

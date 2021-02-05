@@ -47,7 +47,7 @@ const Packages = () => {
                 <div className="card-body">
                   <ul className="check-list">
                     <li>Check-in via en app 2ggr/vecka</li>
-                    <li>Träningsprogram: 3-5 dagar/veck</li>
+                    <li>Träningsprogram: 3-5 dagar/vecka</li>
                     <li>Genomförs på gym eller utomhusgym</li>
                   </ul>
                   <h4>Tillägg</h4>
