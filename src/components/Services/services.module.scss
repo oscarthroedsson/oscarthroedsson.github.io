@@ -1,0 +1,34 @@
+@import "../../styles/variables.scss";
+
+.container {
+  padding: 10rem 0;
+}
+
+.productImage {
+  max-width: 100%;
+}
+
+li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  span {
+    color: $primary;
+  }
+}
+
+.price {
+  color: #8ec490;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.sub {
+  font-weight: 300 !important;
+  font-size: 28px;
+}
+
+.main {
+  font-size: 32px;
+}

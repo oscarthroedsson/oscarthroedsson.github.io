@@ -15,7 +15,7 @@ const Vision = () => {
               till gymmet och improvisera, våga testa nya övningar och inte få
               ont, känslan av att känna sig stark och sätta nya personrekord!
               Tänk om majoriteten av Sveriges befolkning hade varit fysiskt
-              aktiva och inte överviktiga! Det är min vision, mitt Sverige!
+              aktiva och inte överviktiga! Det är min vision!
             </p>
           </div>
         </div>

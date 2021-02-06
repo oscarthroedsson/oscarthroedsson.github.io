@@ -3,7 +3,7 @@ import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
 
-const Contact = ({ showPriceInfo }) => {
+const Contact = ({ showPriceInfo, applicationRef }) => {
   const [step, setStep] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -174,7 +174,7 @@ const Contact = ({ showPriceInfo }) => {
     ).then(() => setStep(4));
   };
   return (
-    <section id="anmalan" className="signup-section">
+    <section ref={applicationRef} id="anmalan" className="signup-section">
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-lg-8 mx-auto text-center">

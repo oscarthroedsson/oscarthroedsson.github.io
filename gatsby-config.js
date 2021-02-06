@@ -22,11 +22,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        googleAnalytics: {
-          trackingId: "UA-184884895-1",
+        googleTagManager: {
+          trackingId: "GTM-M7PWCZ2",
           cookieName: "acceptCookie",
-          anonymize: true,
-          allowAdFeatures: false,
+          dataLayerName: "dataLayer",
         },
         facebookPixel: {
           pixelId: "873502146782253",
