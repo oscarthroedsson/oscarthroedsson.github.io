@@ -68,7 +68,7 @@ const Services = ({ applicationRef }) => {
               <span className={styles.price}>1200kr</span> i startavgift, sedan
               3500kr i månaden.
             </div>
-            <Button onClick={handleClick} text="Ansök nu!"></Button>
+            <Button onClick={handleClick} text="Let's go!"></Button>
           </div>
           <div className="col-lg-6">
             <img
