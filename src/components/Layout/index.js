@@ -39,6 +39,17 @@ class Layout extends Component {
               ]}
             >
               <html lang="sv" />
+              <link
+                rel="stylesheet"
+                type="text/css"
+                charset="UTF-8"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+              />
+              <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+              />
             </Helmet>
             <CookiesProvider>
               <div className={"page-top"}>{children}</div>

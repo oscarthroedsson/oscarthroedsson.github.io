@@ -16,7 +16,7 @@ const About = () => {
               <p className="text-black-50 mb-3">
                 Med glimten i ögat och ett driv för resultat så ser jag till att
                 din träning går framåt men också är rolig på samma gång. Med
-                över 10 000 timmar på golvet med kunder så har jag fått chansen
+                över 7500 timmar på golvet med kunder så har jag fått chansen
                 att utveckla träning och kostupplägg för att det ska passa
                 kundens behov och förutsättningar. Tillsammans hittar vi vägen
                 för att du ska lyckas.

@@ -60,7 +60,7 @@ const Services = ({ applicationRef }) => {
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Vi jobbar ihop i 6 månader, sedan med en månads uppsägningstid
+                Vi jobbar ihop i 6 månader, sedan en månad i taget
               </li>
             </ul>
 
@@ -71,7 +71,11 @@ const Services = ({ applicationRef }) => {
             <Button onClick={handleClick} text="Ansök nu!"></Button>
           </div>
           <div className="col-lg-6">
-            <img className={styles.productImage} src={zenfit}></img>
+            <img
+              className={styles.productImage}
+              alt="Bilder ifrån appen Zenfit som kommer att användas"
+              src={zenfit}
+            ></img>
           </div>
         </div>
       </div>

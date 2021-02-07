@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Scroll from "../Scroll";
 import { Link } from "gatsby";
-import logo from "../../assets/images/logo.png";
 
 const Header = ({ logoOnly = false }) => {
   const [openMenu, setOpenMenu] = useState(false);

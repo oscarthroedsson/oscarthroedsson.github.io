@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Contact from "../components/Contact";
 import About from "../components/About";
 import Services from "../components/Services";
+import Testimonials from "../components/Testimonials";
 
 const IndexPage = () => {
   const applicationRef = useRef(null);
@@ -24,7 +25,7 @@ const IndexPage = () => {
               smärtor. Du orkar gå i trapporna, hänga med barnen, och deras
               tempo är inte längre en utmaning. Du kan känna säkerheten att gå
               till gymmet och improvisera, våga testa nya övningar och inte få
-              ont, känslan av att känna sig stark och sätta nya personrekord!
+              ont, känslan av att känna dig stark och sätta nya personrekord!
               Tänk om majoriteten av Sveriges befolkning hade varit fysiskt
               aktiva och inte överviktiga - det är min vision!
             </p>
@@ -32,7 +33,9 @@ const IndexPage = () => {
         </div>
       </header>
 
-      <section className="quote-section text-center">
+      <Testimonials></Testimonials>
+
+      {/* <section className="quote-section text-center">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto">
@@ -40,7 +43,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <About></About>
       <Services applicationRef={applicationRef}></Services>
