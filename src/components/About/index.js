@@ -1,8 +1,17 @@
 import React from "react";
-import Scroll from "../Scroll";
 import aboutImage from "../../assets/images/about.jpg";
+import Button from "../common/Button";
 
-const About = () => {
+const About = ({ applicationRef }) => {
+  const handleClick = () => {
+    applicationRef.current.scrollIntoView();
+    if (typeof window !== "undefined") {
+      if (window.fbq != null) {
+        window.fbq("track", "Lead");
+      }
+    }
+  };
+
   return (
     <section id="om" className="projects-section bg-light">
       <div className="container">
@@ -39,12 +48,8 @@ const About = () => {
                 du inte gör det. Ett huvud är smart, men två är smartare och
                 tillsammans kommer vi att lyckas.
               </p>
-              <p className="text-black-50 mb-3">
-                Redo för nästa steg?{" "}
-                <Scroll type="id" element="anmalan">
-                  <a href="#anmalan">Ansök här!</a>
-                </Scroll>
-              </p>
+              <p className="text-black-50 mb-3">Redo för nästa steg?</p>
+              <Button onClick={handleClick} text="Jag är redo!"></Button>
             </div>
           </div>
         </div>

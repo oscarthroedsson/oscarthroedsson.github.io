@@ -34,20 +34,8 @@ const IndexPage = () => {
       </header>
 
       <Testimonials></Testimonials>
-
-      {/* <section className="quote-section text-center">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <p>En start med små steg är början på en större förändring</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <About></About>
+      <About applicationRef={applicationRef}></About>
       <Services applicationRef={applicationRef}></Services>
-      {/* <Testimonials></Testimonials> */}
       <Contact applicationRef={applicationRef} />
       <SocialLinks />
       <Footer />

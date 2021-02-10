@@ -65,7 +65,17 @@ const Contact = ({ showPriceInfo, applicationRef }) => {
         body: formData,
         mode: "no-cors",
       }
-    ).then(() => setSubmitted(true));
+    ).then(() => {
+      setSubmitted(true);
+      if (typeof window !== "undefined") {
+        if (window.fbq != null) {
+          window.fbq("track", "Purchase", {
+            value: 0.0,
+            currency: "SEK",
+          });
+        }
+      }
+    });
   };
   return (
     <section ref={applicationRef} id="anmalan" className="signup-section">

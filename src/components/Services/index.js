@@ -6,6 +6,11 @@ import zenfit from "./zenfit.png";
 const Services = ({ applicationRef }) => {
   const handleClick = () => {
     applicationRef.current.scrollIntoView();
+    if (typeof window !== "undefined") {
+      if (window.fbq != null) {
+        window.fbq("track", "Lead");
+      }
+    }
   };
 
   return (
