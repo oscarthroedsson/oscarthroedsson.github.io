@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 import About from "../components/About";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
+import Newsletter from "../components/Newsletter";
 
 const IndexPage = () => {
   const applicationRef = useRef(null);
@@ -37,6 +38,7 @@ const IndexPage = () => {
       <About applicationRef={applicationRef}></About>
       <Services applicationRef={applicationRef}></Services>
       <Contact applicationRef={applicationRef} />
+      <Newsletter></Newsletter>
       <SocialLinks />
       <Footer />
     </Layout>
