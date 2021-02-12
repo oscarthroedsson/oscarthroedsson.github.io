@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.signup {
+  padding: 10rem 0;
+  background: linear-gradient(
+      to bottom,
+      #{fade-out($primary, 0.9)} 0%,
+      #{fade-out($primary, 0.5)} 75%,
+      $primary 100%
+    ),
+    url("../../assets/images/footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.info {
+  background: $secondary;
+  opacity: 0.8;
+  padding: 10px;
+  margin: 20px 0;
+  p {
+    margin: 0;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import aboutImage from "../../assets/images/about.jpg";
 import Button from "../common/Button";
+import styles from "./about.module.scss";
 
 const About = ({ applicationRef }) => {
   const handleClick = () => {
@@ -13,14 +14,14 @@ const About = ({ applicationRef }) => {
   };
 
   return (
-    <section id="om" className="projects-section bg-light">
+    <section id="om" className={`${styles.about} bg-light`}>
       <div className="container">
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
           <div className="col-xl-5 col-lg-4">
             <img className="img-fluid mb-3 mb-lg-0" src={aboutImage} alt="" />
           </div>
           <div className="col-xl-7 col-lg-8">
-            <div className="featured-text text-center text-lg-left">
+            <div className={`${styles.featuredText} text-center text-lg-left`}>
               <h2>Om mig</h2>
               <p className="text-black-50 mb-3">
                 Med glimten i ögat och ett driv för resultat så ser jag till att

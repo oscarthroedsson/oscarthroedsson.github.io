@@ -1,20 +1,11 @@
 @import "./bootstrap/bootstrap.min.css";
 @import "variables.scss";
-@import "mixins.scss";
 @import "navbar.scss";
 @import "masthead.scss";
 @import "buttons.scss";
-@import "about.scss";
-@import "quote.scss";
-@import "projects.scss";
-@import "signup.scss";
 @import "contact.scss";
-@import "packages.scss";
-@import "cookies.scss";
 
 @import "./fontawesome/css/all.min.css";
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
-@import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;0,900;1,300&display=swap");
 
 body {

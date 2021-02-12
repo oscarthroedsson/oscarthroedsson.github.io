@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "../common/Button";
 import Input from "../common/Input";
+import styles from "./contact.module.scss";
 
 const Contact = ({ showPriceInfo, applicationRef }) => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -78,12 +79,12 @@ const Contact = ({ showPriceInfo, applicationRef }) => {
     });
   };
   return (
-    <section ref={applicationRef} id="anmalan" className="signup-section">
+    <section ref={applicationRef} id="anmalan" className={styles.signup}>
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-lg-8 mx-auto text-center">
             <h2 className="text-white mb-5">Anmälan</h2>
-            <div className="info">
+            <div className={styles.info}>
               {showPriceInfo && (
                 <React.Fragment>
                   <h4>Prisinformation*</h4>
