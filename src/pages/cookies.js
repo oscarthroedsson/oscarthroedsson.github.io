@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Helmet from "react-helmet";
 import Footer from "../components/Footer";
 import SocialLinks from "../components/SocialLinks";
-import Header from "../components/Header";
+import Menu from "../components/Menu";
 
 const CookiesPage = () => (
   <Layout>
@@ -13,7 +13,7 @@ const CookiesPage = () => (
         content="För att optimera din upplevelse på denna webbplats använder vi cookies."
       />
     </Helmet>
-    <Header logoOnly />
+    <Menu external />
     <section style={{ marginTop: 100 }}>
       <div className="container">
         <div className="row">

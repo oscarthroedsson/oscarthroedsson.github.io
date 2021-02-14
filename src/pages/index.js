@@ -9,12 +9,14 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import Newsletter from "../components/Newsletter";
 import Hero from "../components/common/Hero";
+import Menu from "../components/Menu";
 
 const IndexPage = () => {
   const applicationRef = useRef(null);
+
   return (
     <Layout>
-      <Header />
+      <Menu />
       <Hero id="vision">
         <div className="col-lg-10 mx-auto d-flex align-items-center flex-column text-center">
           <h2 className="mb-4">Min vision</h2>

@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../assets/images/about.jpg";
+import aboutImage from "./about.jpg";
 import Button from "../common/Button";
 import styles from "./about.module.scss";
 

@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary small text-center text-white-50">
       <div className="container">
-        Copyright &copy; Oscar Throedsson 2020 •{" "}
+        Copyright &copy; Oscar Throedsson 2021 •{" "}
         <Link
           to="/cookies"
           className="text-white-50"

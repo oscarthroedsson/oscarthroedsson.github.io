@@ -1,12 +1,12 @@
 import React from "react";
 
 import Layout from "../components/Layout";
-import Header from "../components/Header";
 import Contact from "../components/Contact";
+import Menu from "../components/Menu";
 
 const LifeChangePage = () => (
   <Layout>
-    <Header logoOnly />
+    <Menu external />
     <Contact showPriceInfo />
   </Layout>
 );

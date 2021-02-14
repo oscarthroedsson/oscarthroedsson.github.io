@@ -14,7 +14,7 @@ const Services = ({ applicationRef }) => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="tjanster">
       <div className="container">
         <div className="row dflex align-items-center">
           <div className="col-lg-6 mb-5">

@@ -1,13 +1,13 @@
 import React from "react";
 
 import Layout from "../components/Layout";
-import Header from "../components/Header";
 import Button from "../components/common/Button";
 import Hero from "../components/common/Hero";
+import Menu from "../components/Menu";
 
 const IndexPage = () => (
   <Layout>
-    <Header logoOnly />
+    <Menu external />
     <Hero>
       <div className="mx-auto text-center">
         <h1 className="mx-auto text-uppercase">Sidan kunde inte hittas</h1>
