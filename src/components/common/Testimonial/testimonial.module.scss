@@ -2,12 +2,13 @@
 
 .testimonial {
   width: 80%;
+  max-width: 700px;
   height: 100%;
   background: #f8f9fa;
   padding: 30px;
   margin: 25px auto;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
 
   p {
     line-height: 28px;

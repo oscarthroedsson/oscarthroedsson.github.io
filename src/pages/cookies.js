@@ -14,7 +14,7 @@ const CookiesPage = () => (
       />
     </Helmet>
     <Menu external />
-    <section style={{ marginTop: 100 }}>
+    <section style={{ marginTop: 150 }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">

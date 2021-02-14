@@ -194,8 +194,12 @@ const Contact = ({ showPriceInfo, applicationRef }) => {
                         Jag förstår att denna ansökan är bindande när jag har
                         blivit tilldelad en profil och ett träningsprogram (ev:
                         kostprogram). Läs mer om{" "}
-                        <a href="/kopesavtal.pdf" target="_blank">
-                          köpesavtalet.
+                        <a
+                          href="/kopesavtal.pdf"
+                          target="_blank"
+                          className={styles.agreement}
+                        >
+                          köpesavtalet
                         </a>
                         .
                       </label>
